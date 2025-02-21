@@ -2002,7 +2002,8 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 { 
-    		background: rgba(38, 54, 26, 0.6) url("images/overlay.png");
+		background: #26361a url("images/overlay.png");
+    		background: rgba(38, 54, 26, 0.9) url("images/overlay.png");
 }
 
 .wrapper.style1 .title {
