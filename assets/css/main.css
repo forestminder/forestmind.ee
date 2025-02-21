@@ -1452,7 +1452,7 @@ input, select, textarea {
 	}
 
 	header.style1 {
-    background-image: url('path-to-image.jpg'); /* Pildi URL */
+    background-image: url('https://github.com/forestminder/forestmind.ee/blob/31e33ab00505263fc222732528af91baa133dd93/Pildid/mets.jpg'); /* Pildi URL */
     background-size: cover; /* Täidab ala, võib lõigata */
     background-position: center; /* Keskendab pildi */
     text-align: center;
