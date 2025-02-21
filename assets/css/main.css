@@ -2006,13 +2006,13 @@ input, select, textarea {
     				color: rgba(62, 69, 21, 0.75);
 }
 		.wrapper.style1 {
-			background: #4e8c5c url("images/overlay.png");
+			background: #373813 url("images/overlay.png");
 			color: #eee;
 			color: rgba(78, 140, 92, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #4e8c5c url("images/overlay.png");
+				background: #373813 url("images/overlay.png");
 				color: #fff;
 			}
 
