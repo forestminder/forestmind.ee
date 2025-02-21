@@ -2002,18 +2002,7 @@ input, select, textarea {
 							
 				.wrapper.style1 {
    				 background: #373813 ;
-   				 color: #eee;
-    				color: rgba(62, 69, 21, 0.75);
-}
-		.wrapper.style1 {
-			background: #373813 url("images/overlay.png");
-			color: #eee;
-			color: rgba(78, 140, 92, 0.75);
-		}
-
-			.wrapper.style1 .title {
-				background: #373813 url("images/overlay.png");
-				color: #fff;
+   				 }	
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
