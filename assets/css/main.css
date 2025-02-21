@@ -1452,11 +1452,14 @@ input, select, textarea {
 	}
 
 	header.style1 {
-    background-image: url('Pildid/mets.jpg'); /* Pildi URL */
-    background-size: auto; /* Täidab ala, võib lõigata */
-    background-position: center; /* Keskendab pildi */
+    background-image: url('Pildid/mets.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
     text-align: center;
-    padding: 3em 0 3em 0;
+    padding: 2em 0;
+}
+
 }
 
 header.style1 h2 {
