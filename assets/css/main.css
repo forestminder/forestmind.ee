@@ -1452,25 +1452,42 @@ input, select, textarea {
 	}
 
 	header.style1 {
-		text-align: center;
-		padding: 3em 0 3em 0;
-	}
+    background-image: url('path-to-image.jpg'); /* Pildi URL */
+    background-size: cover; /* Täidab ala, võib lõigata */
+    background-position: center; /* Keskendab pildi */
+    text-align: center;
+    padding: 3em 0 3em 0;
+}
 
-		header.style1 h2 {
-			font-weight: 700;
-			font-size: 2em;
-			letter-spacing: 0.075em;
-			line-height: 1.5em;
-		}
+header.style1 h2 {
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 0.075em;
+    line-height: 1.5em;
+}
 
-		header.style1 p {
-			color: #b1b4b9;
-			display: block;
-			margin: 1.15em 0 0 0;
-			font-size: 1.3em;
-			letter-spacing: 0.075em;
-			line-height: 1.5em;
-		}
+header.style1 p {
+    color: #b1b4b9;
+    display: block;
+    margin: 1.15em 0 0 0;
+    font-size: 1.3em;
+    letter-spacing: 0.075em;
+    line-height: 1.5em;
+
+	
+	@media screen and (max-width: 768px) {
+    header.style1 img {
+        width: 100%; /* Mobiilis täidab kogu laius */
+        height: auto;
+    }
+
+    header.style1 {
+        padding: 2em 0 2em 0; /* Väiksem padding mobiilis */
+    }
+}
+
+}
+
 
 /* Table */
 
