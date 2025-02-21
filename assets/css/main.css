@@ -1999,8 +1999,10 @@ input, select, textarea {
 				width: 35px;
 				height: 38px;
 				background: url("images/shadow.png");
-			}
-
+			.wrapper.style1 {
+				
+				background: #3e4515;
+}
 		.wrapper.style1 {
 			background: #4e8c5c url("images/overlay.png");
 			color: #eee;
