@@ -2024,9 +2024,9 @@ header.style1 p {
 				height: 38px;
 				background: url("images/shadow.png");
 			}
-
+					
 		.wrapper.style1 { 
-		background: #26361a url("images/overlay.png");
+		background: #aabea0 url("images/overlay.png");
     		background: rgba(38, 54, 26, 0.9) url("images/overlay.png");
 }
 
