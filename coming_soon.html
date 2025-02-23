@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>FORESTMIND - Varsti valmiv leht</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Peidame kogu lehe sisu */
+			#content {
+				display: none;
+			}
+
+			/* Kuvame valmisolekuteate */
+			#coming-soon {
+				text-align: center;
+				font-size: 30px;
+				font-weight: bold;
+				color: #26361a;
+				padding: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Kuvatakse ainult valmisolekuteade -->
+			<div id="coming-soon">
+				<h1>Leht on varsti valmis!</h1>
+				<p>Me töötame selle kallal, peagi saad rohkem infot!</p>
+			</div>
+
+			<!-- Kogu ülejäänud sisu on peidetud -->
+			<div id="content">
+				<!-- Siia lisage oma tavapärane lehe sisu, näiteks menüü, tekstid, pildid jne -->
+				<!-- Näide: -->
+				<section id="header">
+					<h1>FORESTMIND</h1>
+					<p>Tuleb täiendav info hiljem.</p>
+				</section>
+				<!-- Siin on veel muud sisu -->
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script>
+			// Kui soovid hiljem sisu kuvada, saad kasutada näiteks järgnevat JavaScripti
+			// Näiteks mõne aja pärast või pärast tegevust muuta, et kogu sisu kuvatakse
+
+			// Näide: Kuvatakse 5 sekundi pärast kogu leht
+			setTimeout(function() {
+				document.getElementById('coming-soon').style.display = 'none';  // Peidab "varsti valmis" sõnumi
+				document.getElementById('content').style.display = 'block';    // Näitab kogu sisu
+			}, 500000000); // 5 sekundit
+		</script>
+	</body>
+</html>
