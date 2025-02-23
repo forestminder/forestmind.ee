@@ -18,7 +18,7 @@
 				</div>
 
 				<!-- Nav -->
-						<nav id="nav">
+				<nav id="nav">
     <ul>
         <li class="current"><a href="index.html">Avaleht</a></li>
         <li><a href="about.html">Ettevõttest</a></li>
@@ -35,23 +35,23 @@
         <li><a href="contact.html">Kontakt</a></li> 
     </ul>
 </nav>
-				</section>
+			</section>
 
 			<!-- Contact Section -->
 			<section id="contact" class="wrapper style2">
 				<div class="title">Kontakt</div>
 				<div class="container">
 					<section>
-						<form method="post" action="send_email.php">
+						<form method="POST" action="https://formspree.io/f/mpwqervz">
 							<div class="row gtr-50">
 								<div class="col-6 col-12-small">
-									<input type="text" name="name" id="contact-name" placeholder="Nimi" />
+									<input type="text" name="name" id="contact-name" placeholder="Nimi" required />
 								</div>
 								<div class="col-6 col-12-small">
-									<input type="email" name="email" id="contact-email" placeholder="E-post" />
+									<input type="email" name="email" id="contact-email" placeholder="E-post" required />
 								</div>
 								<div class="col-12">
-									<textarea name="message" id="contact-message" placeholder="Sõnum" rows="4"></textarea>
+									<textarea name="message" id="contact-message" placeholder="Sõnum" rows="4" required></textarea>
 								</div>
 								<div class="col-12">
 									<ul class="actions">
