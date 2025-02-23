@@ -71,7 +71,11 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+/* SIIN ON HIKE.HTML CSS*/
 
+body.hike-page {
+    background-color: #aabea0; /* Muudab ainult hike.html lehe tausta värvi */
+}
 /* Basic */
 
 	@-ms-viewport {
