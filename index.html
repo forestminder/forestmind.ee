@@ -31,15 +31,9 @@
 				background: var(--bg-light);
 			}
 
-			/* Kõik pealkirjad tumeroheliseks (sh "Uudised" jms) */
+			/* Kõik pealkirjad tumeroheliseks (sh .title) */
 			h1, h2, h3, h4, h5, h6,
 			.title {
-				color: var(--forest-green);
-			}
-
-			/* Uudiste-kaartide pealkirjad roheliseks (kirjutab roosa üle) */
-			#highlights .highlight h3,
-			#highlights .highlight h3 a {
 				color: var(--forest-green);
 			}
 
@@ -47,7 +41,6 @@
 			a {
 				color: var(--forest-green);
 			}
-
 			a:hover,
 			a:focus {
 				color: var(--forest-green-light);
@@ -59,7 +52,6 @@
 				color: #ffffff !important;
 				border-color: var(--forest-green);
 			}
-
 			.button.style1:hover {
 				background: var(--forest-green-light);
 				border-color: var(--forest-green-light);
@@ -71,20 +63,27 @@
 				color: var(--forest-green) !important;
 				border-color: var(--forest-green);
 			}
-
 			.button.style2:hover {
 				background: #f3f8f4;
 			}
 
-			/* Menüü – valge 50% läbipaistev taust */
+			/* Kolmas tüübi nupp (nt "Loe lähemalt" intro blokis) ka roheliseks, mitte roosaks */
+			.button.style3 {
+				background: #ffffff;
+				color: var(--forest-green) !important;
+				border-color: var(--forest-green);
+			}
+			.button.style3:hover {
+				background: #f3f8f4;
+			}
+
+			/* Menüü – valge 50% läbipaistev taust, roheline tekst */
 			#nav > ul {
 				background: rgba(255, 255, 255, 0.5); /* 50% läbipaistev valge */
 			}
-
 			#nav > ul > li > a {
 				color: var(--forest-green);
 			}
-
 			#nav > ul > li:hover > a,
 			#nav > ul > li.active > a,
 			#nav > ul > li.current > a {
@@ -92,17 +91,24 @@
 				color: #ffffff;
 			}
 
-			/* Tehtud tööde ikoon-pealkirjad (Valgustusraie, Kultuurihooldus, Uuendusraied jne) roheliseks,
-			   mitte enam teema vaikimisi roosaks */
-			.feature-list h3.icon,
-			#features h3.icon {
-				color: var(--forest-green);
+			/* --- OLULINE OSA: Valgustusraie, Kultuurihooldus, Uuendusraied jms --- */
+
+			/* Tehtud tööde pealkirjad (Valgustusraie jne) roheliseks, mitte roosaks */
+			#features .feature-list h3,
+			#features .feature-list h3.icon {
+				color: var(--forest-green) !important;
 			}
 
-			.feature-list h3.icon:before,
-			#features h3.icon:before {
-				color: var(--forest-green);
-				border-color: var(--forest-green);
+			/* Ikonite ringid (fa-ikooni ümber) roheliseks */
+			#features .feature-list h3.icon:before {
+				color: var(--forest-green) !important;
+				border-color: var(--forest-green) !important;
+			}
+
+			/* --- Uudiste ploki pealkirjad --- */
+			#highlights .highlight h3,
+			#highlights .highlight h3 a {
+				color: var(--forest-green) !important;
 			}
 
 			/* Uudiste-kaartide kastid neutraalseks */
@@ -110,9 +116,70 @@
 				background: #ffffff;
 				border: 1px solid #e0e0e0;
 			}
-
 			.highlight .image.featured img {
 				border-bottom: 1px solid #e0e0e0;
+			}
+
+			/* --- Footer: kõik tekstid nähtavaks ja roosa maha --- */
+
+			/* Footer üldtekst tumedaks */
+			#footer,
+			#footer p,
+			#footer li {
+				color: var(--text-main) !important;
+			}
+
+			/* Footeris pealkirjad (Aadress, Sotsiaalmeedia, Email, Telefon) roheliseks */
+			#footer h2,
+			#footer h3 {
+				color: var(--forest-green) !important;
+			}
+
+			/* Footeris ikoonide ringid roheliseks */
+			#footer h3.icon:before {
+				color: var(--forest-green) !important;
+				border-color: var(--forest-green) !important;
+			}
+
+			/* Footeris lingid tumedaks/roheliseks, mitte valgeks/roosaks */
+			#footer a {
+				color: var(--forest-green) !important;
+			}
+			#footer a:hover {
+				color: var(--forest-green-light) !important;
+			}
+
+			/* Kontaktivormi teksti värv */
+			#footer input[type="text"],
+			#footer input[type="email"],
+			#footer textarea {
+				color: var(--text-main) !important;
+				background: #ffffff;
+				border-color: #cccccc;
+			}
+
+			/* Placeholderid halliks, et neid valgel taustal näha oleks */
+			#footer input::placeholder,
+			#footer textarea::placeholder {
+				color: #666666;
+				opacity: 1;
+			}
+			/* mõne brauseri jaoks eraldi pseudod */
+			#footer input::-webkit-input-placeholder,
+			#footer textarea::-webkit-input-placeholder {
+				color: #666666;
+			}
+			#footer input:-ms-input-placeholder,
+			#footer textarea:-ms-input-placeholder {
+				color: #666666;
+			}
+
+			/* Copyright-riba tekst nähtavaks */
+			#copyright,
+			#copyright ul,
+			#copyright li,
+			#copyright a {
+				color: var(--text-main) !important;
 			}
 		</style>
 	</head>
