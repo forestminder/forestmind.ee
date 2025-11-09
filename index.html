@@ -76,9 +76,9 @@
 				background: #f3f8f4;
 			}
 
-			/* Menüü taust valge, tekst roheline */
+			/* Menüü – valge 50% läbipaistev taust */
 			#nav > ul {
-				background: #ffffff;
+				background: rgba(255, 255, 255, 0.5); /* 50% läbipaistev valge */
 			}
 
 			#nav > ul > li > a {
@@ -90,6 +90,19 @@
 			#nav > ul > li.current > a {
 				background: var(--forest-green);
 				color: #ffffff;
+			}
+
+			/* Tehtud tööde ikoon-pealkirjad (Valgustusraie, Kultuurihooldus, Uuendusraied jne) roheliseks,
+			   mitte enam teema vaikimisi roosaks */
+			.feature-list h3.icon,
+			#features h3.icon {
+				color: var(--forest-green);
+			}
+
+			.feature-list h3.icon:before,
+			#features h3.icon:before {
+				color: var(--forest-green);
+				border-color: var(--forest-green);
 			}
 
 			/* Uudiste-kaartide kastid neutraalseks */
