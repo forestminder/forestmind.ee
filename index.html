@@ -5,268 +5,361 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- Forestmind – värvid: tumeroheline + valge -->
+		<style>
+			/* Põhivärvid */
+			:root {
+				--forest-green: #1f4d2c;
+				--forest-green-light: #2f7a42;
+				--bg-light: #ffffff;
+				--text-main: #111111;
+			}
+
+			/* Üldine taust + tekst */
+			body {
+				background: var(--bg-light);
+				color: var(--text-main);
+			}
+
+			/* Kõik sektsioonid valge taustaga */
+			.wrapper,
+			.wrapper.style1,
+			.wrapper.style2,
+			.wrapper.style3,
+			#footer.wrapper {
+				background: var(--bg-light);
+			}
+
+			/* Kõik pealkirjad tumeroheliseks (sh "Uudised" jms) */
+			h1, h2, h3, h4, h5, h6,
+			.title {
+				color: var(--forest-green);
+			}
+
+			/* Uudiste-kaartide pealkirjad roheliseks (kirjutab roosa üle) */
+			#highlights .highlight h3,
+			#highlights .highlight h3 a {
+				color: var(--forest-green);
+			}
+
+			/* Lingid roheliseks */
+			a {
+				color: var(--forest-green);
+			}
+
+			a:hover,
+			a:focus {
+				color: var(--forest-green-light);
+			}
+
+			/* Nupud – tume metsaroheline + valge tekst */
+			.button.style1 {
+				background: var(--forest-green);
+				color: #ffffff !important;
+				border-color: var(--forest-green);
+			}
+
+			.button.style1:hover {
+				background: var(--forest-green-light);
+				border-color: var(--forest-green-light);
+			}
+
+			/* Teise tüübi nupp – valge taust, roheline raam + tekst */
+			.button.style2 {
+				background: #ffffff;
+				color: var(--forest-green) !important;
+				border-color: var(--forest-green);
+			}
+
+			.button.style2:hover {
+				background: #f3f8f4;
+			}
+
+			/* Menüü taust valge, tekst roheline */
+			#nav > ul {
+				background: #ffffff;
+			}
+
+			#nav > ul > li > a {
+				color: var(--forest-green);
+			}
+
+			#nav > ul > li:hover > a,
+			#nav > ul > li.active > a,
+			#nav > ul > li.current > a {
+				background: var(--forest-green);
+				color: #ffffff;
+			}
+
+			/* Uudiste-kaartide kastid neutraalseks */
+			.highlight {
+				background: #ffffff;
+				border: 1px solid #e0e0e0;
+			}
+
+			.highlight .image.featured img {
+				border-bottom: 1px solid #e0e0e0;
+			}
+		</style>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<section id="header" class="wrapper">
+			<section id="header" class="wrapper">
 
-					<!-- Logo -->
-						<div id="logo">
-							<header class="style1" style="background-image: url('Pildid/mets.jpg');"></header>
+				<!-- Logo -->
+				<div id="logo">
+					<header class="style1" style="background-image: url('Pildid/mets.jpg');"></header>
 
-							<h1><a href="index.html">FORESTMIND</a></h1>
-							<p>Metsandusnõustamine ja praktilised lahendused erametsaomanikule.</p>
-						</div>
+					<h1><a href="index.html">FORESTMIND</a></h1>
+					<p>Metsandusnõustamine ja praktilised lahendused erametsaomanikule.</p>
+				</div>
 
-					
-<nav id="nav">
-    <ul>
-        <li class="current"><a href="index.html">Avaleht</a></li>
-        <li><a href="about.html">Ettevõttest</a></li>
-        <li>
-            <a href="#">Loe lisaks</a>
-            <ul>
-                <li><a href="hike.html">Matkad</a></li>
-                <li><a href="client.html">Kliendipäevad</a></li>
-                <li><a href="consult.html">Konsultatsioon</a></li>
-                <li><a href="forestworks.html">Metsatööd</a></li>
-            </ul>
-        </li>
-        <!-- Kontakt on nüüd eraldi menüüs -->
-        <li><a href="contact.html">Kontakt</a></li> 
-    </ul>
-</nav>
+				<nav id="nav">
+					<ul>
+						<li class="current"><a href="index.html">Avaleht</a></li>
+						<li><a href="about.html">Ettevõttest</a></li>
+						<li>
+							<a href="#">Loe lisaks</a>
+							<ul>
+								<li><a href="hike.html">Matkad</a></li>
+								<li><a href="client.html">Kliendipäevad</a></li>
+								<li><a href="consult.html">Konsultatsioon</a></li>
+								<li><a href="forestworks.html">Metsatööd</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Kontakt</a></li> 
+					</ul>
+				</nav>
 
-
-				</section>
-
+			</section>
 
 			<!-- Intro -->
-				<section id="intro" class="wrapper style1">
-					<div class="title">Meist</div>
-					<div class="container">
-						<p class="style1">Metsandusnõustamine, metsatööd ja koolitused.</p>
-						<p class="style2">
-							Teeme koos su metsa korda! 
-						</p>
-						<p class="style3">
-							Forestmind ühendab metsandushariduse, praktilise kogemuse ja omaniku-keskse vaate. 
-							Nõustame erametsaomanikke ja maapiirkonna ettevõtjaid, et mets oleks korras nii majanduslikult kui looduskaitseliselt.
-						</p>
-						<ul class="actions">
-							<li><a href="about.html" class="button style3 large">Loe lähemalt</a></li>
-						</ul>
-					</div>
-				</section>
+			<section id="intro" class="wrapper style1">
+				<div class="title">Meist</div>
+				<div class="container">
+					<p class="style1">Metsandusnõustamine, metsatööd ja koolitused.</p>
+					<p class="style2">
+						Teeme koos su metsa korda!
+					</p>
+					<p class="style3">
+						Forestmind ühendab metsandushariduse, praktilise kogemuse ja omaniku-keskse vaate. 
+						Nõustame erametsaomanikke ja maapiirkonna ettevõtjaid, et mets oleks korras nii majanduslikult 
+						kui ka looduskaitseliselt.
+					</p>
+					<ul class="actions">
+						<li><a href="about.html" class="button style3 large">Loe lähemalt</a></li>
+					</ul>
+				</div>
+			</section>
 
 			<!-- Main -->
-				<section id="main" class="wrapper style2">
-					<div class="title">Detailid</div>
-					<div class="container">
+			<section id="main" class="wrapper style2">
+				<div class="title">Detailid</div>
+				<div class="container">
 
-						<!-- Image -->
-							<a href="#" class="image featured">
-								<img src="images/pic01.jpg" alt="Metsatööd ja metsandusnõustamine" />
-							</a>
+					<!-- Image -->
+					<a href="#" class="image featured">
+						<img src="images/pic01.jpg" alt="Metsatööd ja metsandusnõustamine" />
+					</a>
 
-						<!-- Features -->
-							<section id="features">
-								<header class="style1">
-									<h2>Tehtud tööd</h2>
-									<p>Valik metsauuenduse ja hooldustööde näidetest, mida oleme aidanud planeerida ja ellu viia.</p>
-								</header>
-								<div class="feature-list">
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-comment">Valgustusraie</h3>
-												<p>Valgustusraie aitab noorel metsakul kasvama jääda just need puud, millest kujunevad tuleviku tüvipuud. Eemaldame konkurendid ja alla jäänud puud, et mets oleks tervem, valgusküllasem ja tormikindlam. Plaanime töö nii, et säiliks looduslik mitmekesisus ja mets uueneks loomulikult ka edaspidi.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-sync">Metsaistutus</h3>
-												<p>Metsaistutus on metsa uuendamise alus, kui looduslik uuenemine ei ole piisav või soovitakse muud liigilist koosseisu. Aitame valida sobiva puuliigi, istutusskeemi ja tööde ajastuse, et istikud paremini kasvama läheksid. Vajadusel koordineerime nii istikute tellimise kui tööde korraldamise objektil.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-image">Kultuurihooldus</h3>
-												<p>Kultuurihooldus hoiab istutatud või looduslikult uuenenud metsakultuuri rohu ja lehtpuuvõsa surve alt vabana. See vähendab istikute kahjustusi ja tagab ühtlasema ning kiirema kasvu. Planeerime hooldustööd nii, et kulud oleks mõistlikud ja tulemus kestaks.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-cog">Maapinna ettevalmistus</h3>
-												<p>Maapinna ettevalmistus loob metsa uuendamiseks sobivad kasvukohatingimused, parandades nii istutuse kui loodusliku uuenemise tulemusi. Valin koos sinuga sobiva meetodi (nt mineraliseerimine, ribaharimine, mätastamine) vastavalt pinnasele ja kasvukohale. Nii väheneb istikute hukka minek ja mets saab parema stardipositsiooni.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-wrench">Harvendusraie</h3>
-												<p>Harvendusraie annab kasvuruumi parimatele puudele, tõstes metsa väärtust ja tervist. Eemaldame haiged, kõverad ja alla jäänud puud, et järelejääv mets kasvaks jämedamaks ja oleks tormidele vastupidavam. Koostan harvendusraie plaani, mis arvestab nii metsaomaniku eesmärkide kui ka raie seaduslike piirangutega.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon solid fa-check">Uuendusraied</h3>
-												<p>Uuendusraie on metsa elukaare loomulik osa, mille käigus vana mets raiutakse ja luuakse tingimused uue metsapõlve tekkeks. Aitan valida sobiva raieviisi (lageraie, turberaie, häilraie), arvestades kasvukohta, looduskaitset ja omaniku soove. Koostame koos kava, mis seob uuendusraie järgneva uuendamise ja hooldustöödega, et uus mets saaks tugevama alguse.</p>
-											</section>
-										</div>
-									</div>
+					<!-- Features -->
+					<section id="features">
+						<header class="style1">
+							<h2>Tehtud tööd</h2>
+							<p>Valik metsauuenduse ja hooldustööde näidetest, mida oleme aidanud planeerida ja ellu viia.</p>
+						</header>
+						<div class="feature-list">
+							<div class="row">
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon fa-comment">Valgustusraie</h3>
+										<p>Valgustusraie aitab noorel metsakul kasvama jääda just need puud, millest kujunevad tuleviku tüvipuud. Eemaldame konkurendid ja alla jäänud puud, et mets oleks tervem, valgusküllasem ja tormikindlam. Plaanime töö nii, et säiliks looduslik mitmekesisus ja mets uueneks loomulikult ka edaspidi.</p>
+									</section>
 								</div>
-								<ul class="actions special">
-									<li><a href="consult.html" class="button style1 large">Küsi nõu</a></li>
-									<li><a href="forestworks.html" class="button style2 large">Vaata metsatöid</a></li>
-								</ul>
-							</section>
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon solid fa-sync">Metsaistutus</h3>
+										<p>Metsaistutus on metsa uuendamise alus, kui looduslik uuenemine ei ole piisav või soovitakse muud liigilist koosseisu. Aitame valida sobiva puuliigi, istutusskeemi ja tööde ajastuse, et istikud paremini kasvama läheksid. Vajadusel koordineerime nii istikute tellimise kui tööde korraldamise objektil.</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon fa-image">Kultuurihooldus</h3>
+										<p>Kultuurihooldus hoiab istutatud või looduslikult uuenenud metsakultuuri rohu ja lehtpuuvõsa surve alt vabana. See vähendab istikute kahjustusi ja tagab ühtlasema ning kiirema kasvu. Planeerime hooldustööd nii, et kulud oleks mõistlikud ja tulemus kestaks.</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon solid fa-cog">Maapinna ettevalmistus</h3>
+										<p>Maapinna ettevalmistus loob metsa uuendamiseks sobivad kasvukohatingimused, parandades nii istutuse kui loodusliku uuenemise tulemusi. Valin koos sinuga sobiva meetodi (nt mineraliseerimine, ribaharimine, mätastamine) vastavalt pinnasele ja kasvukohale. Nii väheneb istikute hukka minek ja mets saab parema stardipositsiooni.</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon solid fa-wrench">Harvendusraie</h3>
+										<p>Harvendusraie annab kasvuruumi parimatele puudele, tõstes metsa väärtust ja tervist. Eemaldame haiged, kõverad ja alla jäänud puud, et järelejääv mets kasvaks jämedamaks ja oleks tormidele vastupidavam. Koostan harvendusraie plaani, mis arvestab nii metsaomaniku eesmärkide kui ka raie seaduslike piirangutega.</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon solid fa-check">Uuendusraied</h3>
+										<p>Uuendusraie on metsa elukaare loomulik osa, mille käigus vana mets raiutakse ja luuakse tingimused uue metsapõlve tekkeks. Aitan valida sobiva raieviisi (lageraie, turberaie, häilraie), arvestades kasvukohta, looduskaitset ja omaniku soove. Koostame koos kava, mis seob uuendusraie järgneva uuendamise ja hooldustöödega, et uus mets saaks tugevama alguse.</p>
+									</section>
+								</div>
+							</div>
+						</div>
+						<ul class="actions special">
+							<li><a href="consult.html" class="button style1 large">Küsi nõu</a></li>
+							<li><a href="forestworks.html" class="button style2 large">Vaata metsatöid</a></li>
+						</ul>
+					</section>
 
-					</div>
-				</section>
+				</div>
+			</section>
 
 			<!-- Highlights -->
-				<section id="highlights" class="wrapper style3">
-					<div class="title">Uudised</div>
-					<div class="container">
-						<div class="row aln-center">
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="Valgustusraie näide" /></a>
-									<h3><a href="#">Kuidas planeerida esimest raiet?</a></h3>
-									<p>Selgitame, millal on õige aeg valgustus- või harvendusraieks, kuidas hinnata metsa seisukorda ja millest alustada, kui varasemalt pole raietöid tellinud.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Loe artiklit</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="Metsa uuendamine" /></a>
-									<h3><a href="#">Metsa uuendamine pärast lageraiet</a></h3>
-									<p>Võrdleme istutust ja looduslikku uuenemist, räägime maapinna ettevalmistusest ning anname soovitusi, kuidas vähendada istikute hukka minekut esimestel aastatel.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Vaata soovitusi</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="Toetused metsaomanikule" /></a>
-									<h3><a href="#">Toetused metsaomanikule</a></h3>
-									<p>Koondame ülevaate peamistest toetusmeetmetest metsa uuendamiseks ja hoolduseks ning selgitame, millal tasub toetust taotleda ja millele tähelepanu pöörata.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Uuri lähemalt</a></li>
-									</ul>
-								</section>
-							</div>
+			<section id="highlights" class="wrapper style3">
+				<div class="title">Uudised</div>
+				<div class="container">
+					<div class="row aln-center">
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="Valgustusraie näide" /></a>
+								<h3><a href="#">Kuidas planeerida esimest raiet?</a></h3>
+								<p>Selgitame, millal on õige aeg valgustus- või harvendusraieks, kuidas hinnata metsa seisukorda ja millest alustada, kui varasemalt pole raietöid tellinud.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Loe artiklit</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="Metsa uuendamine" /></a>
+								<h3><a href="#">Metsa uuendamine pärast lageraiet</a></h3>
+								<p>Võrdleme istutust ja looduslikku uuenemist, räägime maapinna ettevalmistusest ning anname soovitusi, kuidas vähendada istikute hukka minekut esimestel aastatel.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Vaata soovitusi</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="col-4 col-12-medium">
+							<section class="highlight">
+								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="Toetused metsaomanikule" /></a>
+								<h3><a href="#">Toetused metsaomanikule</a></h3>
+								<p>Koondame ülevaate peamistest toetusmeetmetest metsa uuendamiseks ja hoolduseks ning selgitame, millal tasub toetust taotleda ja millele tähelepanu pöörata.</p>
+								<ul class="actions">
+									<li><a href="#" class="button style1">Uuri lähemalt</a></li>
+								</ul>
+							</section>
 						</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
 			<!-- Footer -->
-				<section id="footer" class="wrapper">
-					<div class="title">Võta ühendust</div>
-					<div class="container">
-						<header class="style1">
-							<h2>FORESTMIND – Metsandusnõustamine ja metsatööd</h2>
-							<p>
-								Aitan erametsaomanikul teha teadlikke otsuseid: alates metsa uuendamisest ja hooldusraietest<br />
-								kuni toetuste, kliendipäevade ja õppekäikudeni. Kirjuta, kui vajad neutraalset nõu või teist arvamust.
-							</p>
-						</header>
-						<div class="row">
-							<div class="col-6 col-12-medium">
+			<section id="footer" class="wrapper">
+				<div class="title">Võta ühendust</div>
+				<div class="container">
+					<header class="style1">
+						<h2>FORESTMIND – Metsandusnõustamine ja metsatööd</h2>
+						<p>
+							Aitan erametsaomanikul teha teadlikke otsuseid: alates metsa uuendamisest ja hooldusraietest<br />
+							kuni toetuste, kliendipäevade ja õppekäikudeni. Kirjuta, kui vajad neutraalset nõu või teist arvamust.
+						</p>
+					</header>
+					<div class="row">
+						<div class="col-6 col-12-medium">
 
-								<!-- Contact Form -->
-									<section>
-										<form method="POST" action="https://formspree.io/f/mpwqervz">
-    <div class="row gtr-50">
-        <div class="col-6 col-12-small">
-            <input type="text" name="name" id="contact-name" placeholder="Nimi" required />
-        </div>
-        <div class="col-6 col-12-small">
-            <input type="email" name="email" id="contact-email" placeholder="Email" required />
-        </div>
-        <div class="col-12">
-            <textarea name="message" id="contact-message" placeholder="Kirjelda lühidalt, millist metsa- või nõustamisteenust vajad." rows="4" required></textarea>
-        </div>
-        <div class="col-12">
-            <ul class="actions">
-                <li><input type="submit" class="style1" value="Saada" /></li>
-                <li><input type="reset" class="style2" value="Kustuta" /></li>
-            </ul>
-        </div>
-    </div>
-</form>
-
-									</section>
-
-							</div>
-							<div class="col-6 col-12-medium">
-
-								<!-- Contact -->
-									<section class="feature-list small">
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-home">Aadress</h3>
-													<p>
-														Forestmind OÜ<br />
-														Harjumaa<br />
-														Eesti
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-comment">Sotsiaalmeedia</h3>
-													<p>
-														<a href="#">@forestmind</a><br />
-														<a href="#">linkedin.com/forestmind</a><br />
-														<a href="#">facebook.com/forestmind</a>
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-envelope">Email</h3>
-													<p>
-														<a href="mailto:info@forestmind.ee">info@forestmind.ee</a>
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-phone">Telefon</h3>
-													<p>
-														+372 58 000 000
-													</p>
-												</section>
-											</div>
+							<!-- Contact Form -->
+							<section>
+								<form method="POST" action="https://formspree.io/f/mpwqervz">
+									<div class="row gtr-50">
+										<div class="col-6 col-12-small">
+											<input type="text" name="name" id="contact-name" placeholder="Nimi" required />
 										</div>
-									</section>
+										<div class="col-6 col-12-small">
+											<input type="email" name="email" id="contact-email" placeholder="Email" required />
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="contact-message" placeholder="Kirjelda lühidalt, millist metsa- või nõustamisteenust vajad." rows="4" required></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" class="style1" value="Saada" /></li>
+												<li><input type="reset" class="style2" value="Kustuta" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
 
-							</div>
 						</div>
-						<div id="copyright">
-							<ul>
-								<li>&copy; FORESTMIND</li><li>Disain: <a href="#">HTML5 UP</a></li>
-							</ul>
+						<div class="col-6 col-12-medium">
+
+							<!-- Contact -->
+							<section class="feature-list small">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<section>
+											<h3 class="icon solid fa-home">Aadress</h3>
+											<p>
+												Forestmind OÜ<br />
+												Harjumaa<br />
+												Eesti
+											</p>
+										</section>
+									</div>
+									<div class="col-6 col-12-small">
+										<section>
+											<h3 class="icon solid fa-comment">Sotsiaalmeedia</h3>
+											<p>
+												<a href="#">@forestmind</a><br />
+												<a href="#">linkedin.com/forestmind</a><br />
+												<a href="#">facebook.com/forestmind</a>
+											</p>
+										</section>
+									</div>
+									<div class="col-6 col-12-small">
+										<section>
+											<h3 class="icon solid fa-envelope">Email</h3>
+											<p>
+												<a href="mailto:info@forestmind.ee">info@forestmind.ee</a>
+											</p>
+										</section>
+									</div>
+									<div class="col-6 col-12-small">
+										<section>
+											<h3 class="icon solid fa-phone">Telefon</h3>
+											<p>
+												+372 58 000 000
+											</p>
+										</section>
+									</div>
+								</div>
+							</section>
+
 						</div>
 					</div>
-				</section>
+					<div id="copyright">
+						<ul>
+							<li>&copy; FORESTMIND</li><li>Disain: <a href="#">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
