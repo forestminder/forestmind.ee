@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Forestmind — Coming soon</title>
+  <title>Forestmind — Veebileht valmib peagi</title>
   <meta name="description" content="Forestmind — veebileht valmib peagi / website coming soon." />
 
   <style>
@@ -24,7 +24,7 @@
       color: var(--text);
       background:
         linear-gradient(var(--overlay), var(--overlay)),
-        url("https://github.com/forestminder/forestmind.ee/blob/e49f5e14efdbd5fe3b0db5dfbedc75e12f6d3df5/Pildid/mets.jpg") center/cover no-repeat fixed;
+        url("Pildid/mets.jpg") center/cover no-repeat fixed;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -150,7 +150,7 @@
         </div>
 
         <div class="small">
-          Kirjelda oma mõtteid.
+          Ootame sinu kirja.
         </div>
       </section>
 
@@ -167,7 +167,7 @@
         </div>
 
         <div class="small">
-          Write to us!
+          We look forward to hearing from you.
         </div>
       </section>
     </div>
@@ -190,24 +190,18 @@
       btnEn.setAttribute('aria-pressed', String(!isEt));
 
       document.documentElement.lang = isEt ? 'et' : 'en';
-      // optional: keep language in URL hash
       location.hash = isEt ? '#et' : '#en';
     }
 
     btnEt.addEventListener('click', () => setLang('et'));
     btnEn.addEventListener('click', () => setLang('en'));
 
-    // initial language from hash or browser
+    // Default language: Estonian
     const hash = (location.hash || '').toLowerCase();
     if (hash === '#en') setLang('en');
-    else if (hash === '#et') setLang('et');
-    else {
-      const prefersEn = (navigator.language || '').toLowerCase().startsWith('en');
-      setLang(prefersEn ? 'en' : 'et');
-    }
+    else setLang('et');
 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
